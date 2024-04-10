@@ -6,7 +6,21 @@ class CurrencyList extends StatelessWidget{
    @override
    Widget build(BuildContext context){
       return Expanded(
-         child: 
+         child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children:[
+               const SizedBox(height:10),
+               const Text(
+                  'Currencies:',
+                  style:TextStyle(
+                     fontSize:18,
+                     fontWeight:FontWeight.w700,
+                  )
+               ),
+               const SizedBox(height:10),
+               Expanded(
+                  child:
          ListView.builder(
                   itemCount:  100,
                   itemBuilder: (context, index){
@@ -15,6 +29,10 @@ class CurrencyList extends StatelessWidget{
                      );
                   }
                )
+               )
+            ]
+         ),
+
       );
    }
 }
