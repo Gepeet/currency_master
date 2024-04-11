@@ -14,6 +14,7 @@ class CurrencyList extends StatelessWidget{
                const Text(
                   'Currencies:',
                   style:TextStyle(
+                     color: Colors.blue,
                      fontSize:18,
                      fontWeight:FontWeight.w700,
                   )
